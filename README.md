@@ -97,4 +97,4 @@ We welcome contributions to improve Career-Counselor-Website!
 ## **Contact**
 For questions or support, please contact:  
 - **Name:** Karthik Nallapu
-- **Email:** karthiknallapu450gmail.com
+- **Email:** karthiknallapu450@gmail.com
