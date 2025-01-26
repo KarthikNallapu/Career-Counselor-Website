@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "templates",
+			"path": "."
+		},
+		{
+			"name": "AI Powered",
+			"path": "../AI Powered"
+		},
+		{
+			"name": "static",
+			"path": "../static"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AI Powered"
+	}
+}

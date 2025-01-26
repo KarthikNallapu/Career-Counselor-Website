@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counselor Form</title>
+    <link rel="stylesheet" href="AI.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        input, textarea, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: 'Poppins', sans-serif;
+        }
+        button {
+            background-color: #ff9800;
+            color: #fff;
+            cursor: pointer;
+        }
+        .multi-input {
+            display: flex;
+            gap: 10px;
+        }
+        .multi-input input {
+            flex: 1;
+        }
+        .multi-input button {
+            width: auto;
+            background-color: #4caf50;
+        }
+
+        /* Success message styles */
+        .success-message {
+            display: flex;
+            justify-content: center; /* Horizontally center the content */
+            align-items: center;     /* Vertically center the content */
+            background-color: transparent;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid black;
+            width: 50rem;
+            margin-left: auto; /* Center it horizontally */
+            margin-right: auto; /* Center it horizontally */
+            display: none; /* Initially hidden */
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="/form" method="POST">
+        <h1>Career Counselor Form</h1>
+        <!-- Basic Information -->
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+
+        <!-- Educational Background -->
+        <select name="education_level" required>
+            <option value="">Select Current Education Level</option>
+            <option value="school">School</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" name="field_of_study" placeholder="Field of Study (if applicable)">
+        <input type="text" name="current_institution" placeholder="Current Institution (Optional)">
+
+        <!-- Skills and Competencies -->
+        <textarea name="skills" placeholder="Skills (e.g., Programming, Leadership)" required></textarea>
+        <textarea name="certifications" placeholder="Certifications (if any)"></textarea>
+
+        <!-- Interests and Preferences -->
+        <textarea name="career_interests" placeholder="Career Interests (e.g., IT, Healthcare, Marketing)" required></textarea>
+        <textarea name="short_term_goals" placeholder="Short-term Goals (1-2 years)" required></textarea>
+        <textarea name="long_term_goals" placeholder="Long-term Aspirations (5+ years)" required></textarea>
+
+        <!-- Experience -->
+        <textarea name="experience" placeholder="Work/Internship Experience"></textarea>
+        <textarea name="projects" placeholder="Projects"></textarea>
+
+        <!-- Additional Information -->
+        <select name="learning_style">
+            <option value="">Preferred Learning Style</option>
+            <option value="visual">Visual (Videos, Charts)</option>
+            <option value="auditory">Auditory (Podcasts, Lectures)</option>
+            <option value="kinesthetic">Kinesthetic (Hands-on Practice)</option>
+            <option value="reading_writing">Reading/Writing</option>
+        </select>
+        <textarea name="challenges" placeholder="Challenges in Choosing a Career"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Details</button>
+    </form>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <h2>Form submitted successfully!</h2>
+    </div>
+
+    <script>
+        // Get the success message element
+        var successMessage = document.getElementById('successMessage');
+
+        // Check if Flask passed success message and show the success message
+        {% if success_message %}
+        successMessage.style.display = "block";
+        {% endif %}
+    </script>
+</body>
+</html>
