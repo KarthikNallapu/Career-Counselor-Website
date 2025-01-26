@@ -1,113 +1,100 @@
-# **MentorAI - AI-Powered Career Counselor**  
-MentorAI is an intelligent web-based platform designed to assist users in navigating their career paths. By leveraging advanced AI technologies, the platform provides personalized career advice, job recommendations, and real-time responses to career-related queries.
+# **Career-Counselor-Website**
+
+Career-Counselor-Website is a web-based platform designed to assist users in exploring career options and receiving personalized guidance. By utilizing AI and cloud-based technologies, the platform delivers tailored advice, job recommendations, and real-time responses to user queries.
 
 ---
 
-## **Features**  
-- **AI-Powered Chatbot:** SageBot is integrated with Google Dialogflow to provide instant career guidance and answer user queries.  
-- **Personalized Recommendations:** Delivers tailored advice based on user input, including skills, interests, and goals.  
-- **User-Friendly Interface:** Responsive front-end design ensures seamless navigation across devices.  
-- **Cloud Integration:** Efficient storage and processing of user data using AWS services.  
-- **Data Security:** User privacy is a top priority, ensuring secure handling of data.
+## **Features**
+- **AI-Powered Chatbot:** Integrated SageBot using BotPress to assist with career-related queries.
+- **Personalized Recommendations:** Provides customized advice based on user skills, interests, and goals.
+- **Responsive Design:** User-friendly front-end interface accessible across all devices.
+- **Data Security:** Implements best practices to protect user data and privacy.
 
 ---
 
-## **Technologies Used**  
+## **Technologies Used**
 - **Frontend:**  
   - HTML5, CSS3, JavaScript  
 - **Backend:**  
   - Python  
-  - Google Dialogflow  
-- **Cloud Platforms:**  
-  - AWS (Amazon Web Services)  
+  - Flask
 - **Database:**  
   - SQL  
 
 ---
 
-## **Getting Started**  
-### Prerequisites  
-- Python 3.7+  
-- AWS account with appropriate services enabled  
-- Google Dialogflow API  
+## **Getting Started**
 
-### Installation  
+### Prerequisites
+- Python 3.7+
+- 
+### Installation
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/mentorai.git
-   cd mentorai
-   ```  
+   git clone https://github.com/your-username/Career-Counselor-Website.git
+   cd Career-Counselor-Website
+   ```
 2. Install dependencies:  
    ```bash
    pip install -r requirements.txt
-   ```  
-3. Set up Google Dialogflow credentials by adding the JSON file to the project directory.  
+   ```
+3. Configure Google Dialogflow credentials by adding the JSON file to the project directory.
 
-4. Configure the database connection in the `config.py` file.  
+4. Set up the database connection in the `config.py` file.
 
 5. Run the application:  
    ```bash
    python app.py
-   ```  
-6. Open your browser and go to `http://localhost:5000` to access the platform.
+   ```
+6. Open your browser and navigate to `http://localhost:5000` to access the platform.
 
 ---
 
-## **Project Structure**  
-```  
-MentorAI/
-├── templates/       # HTML templates for the front-end  
-├── static/          # CSS, JavaScript, and image files  
-├── app.py           # Main application script  
-├── config.py        # Configuration settings  
-├── dialogflow/      # Chatbot integration files  
-├── requirements.txt # Project dependencies  
-└── README.md        # Project documentation  
-```  
+## **Project Structure**
+```bash
+Career-Counselor-Website/
+├── templates/       # HTML templates for the front-end
+├── static/          # CSS, JavaScript, and image files
+├── app.py           # Main application script
+└── README.md        # Project documentation
+```
 
 ---
 
-## **How It Works**  
-1. Users interact with SageBot to input their skills, interests, and goals.  
-2. SageBot uses Google Dialogflow's AI to process queries and provide personalized guidance.  
-3. AWS handles data storage and ensures scalable performance.  
+## **How It Works**
+1. Users interact with SageBot to input their skills, interests, and goals.
+2. SageBot, powered by Google Dialogflow, processes user queries and provides real-time guidance.
+3. Data is securely stored and processed using AWS services.
 
 ---
 
-## **Future Enhancements**  
-- Add multi-language support for global users.  
-- Integrate career roadmap visualizations.  
-- Expand AI capabilities for real-time job market analysis.  
+## **Future Enhancements**
+- Introduce multi-language support for global accessibility.
+- Add career roadmap visualizations.
+- Incorporate AI-driven job market analysis.
 
 ---
 
-## **Contributing**  
-We welcome contributions to improve MentorAI!  
+## **Contributing**
+We welcome contributions to improve Career-Counselor-Website!  
 1. Fork the repository.  
 2. Create a new branch:  
    ```bash
-   git checkout -b feature/your-feature-name  
-   ```  
+   git checkout -b feature/your-feature-name
+   ```
 3. Commit your changes:  
    ```bash
-   git commit -m "Added new feature"  
-   ```  
+   git commit -m "Added new feature"
+   ```
 4. Push to the branch:  
    ```bash
-   git push origin feature/your-feature-name  
-   ```  
-5. Submit a pull request.  
+   git push origin feature/your-feature-name
+   ```
+5. Submit a pull request.
 
 ---
 
-## **License**  
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## **Contact**  
+## **Contact**
 For questions or support, please contact:  
-- Name: Karthik  
-- Email: your-email@example.com  
-
-Feel free to modify this content based on your specific implementation!
+- **Name:** Karthik Nallapu
+- **Email:** your-karthiknallapu450gmail.com
