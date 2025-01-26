@@ -27,7 +27,7 @@ Career-Counselor-Website is a web-based platform designed to assist users in exp
 
 ### Prerequisites
 - Python 3.7+
-- 
+
 ### Installation
 1. Clone the repository:  
    ```bash
@@ -97,4 +97,4 @@ We welcome contributions to improve Career-Counselor-Website!
 ## **Contact**
 For questions or support, please contact:  
 - **Name:** Karthik Nallapu
-- **Email:** your-karthiknallapu450gmail.com
+- **Email:** karthiknallapu450gmail.com
