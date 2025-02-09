@@ -10,7 +10,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
         user='flask_user',
-        password='9090',
+        password='******', # your mysql root password
         database='career_counselor'
     )
 
@@ -86,7 +86,7 @@ def about():
     # Fixed team member details
     team_members = [
         {'name': 'Karthik Nallapu', 'role': 'Founder & CEO', 'photo': 'static/images/karthik.jpg'},  # Fixed image
-        {'name': 'Suri BhAAi', 'role': 'Chief Technical Officer', 'icon': random.choice(icons)},  # Random icon for Suri BhAAi
+        {'name': 'Suresh Vaddeman', 'role': 'Chief Technical Officer', 'icon': random.choice(icons)},  # Random icon 
         {'name': 'Alex Johnson', 'role': 'UI/UX Designer', 'photo': 'static/images/alex.jpg'},  # Fixed image
         {'name': 'Emily Davis', 'role': 'Lead Data Scientist', 'photo': 'static/images/emily.jpg'},  # Fixed image
     ]
